@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:wght@700&display=swap');
+
+/* * {
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+	box-sizing: border-box;
+} */
+
+/* MOBILE CSS */
+
+body {
+	margin: 20px 20px;
+}
+.mainContainer {
+	display: grid;
+	grid-template-rows: 1fr 3fr;
+	text-align: center;
+	height: 100%;
+	grid-gap: 20px;
+	min-width: ;
+}
+
+.headerNavContainer {
+	display: inline-grid;
+	grid-template-rows: 1fr 1fr;
+	height: 150px;
+}
+
+.header {
+	display: flex;
+	grid-row: 1 / 2;
+	justify-content: center;
+	align-items: center;
+	font-size: 45px;
+	font-family: 'baskerville';
+}
+
+br {
+	display: none;
+}
+
+.normal {
+	display: none;
+}
+
+.manyDevices {
+	display: none;
+}
+
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-right: 20px;
+	background-color: #2e5266;
+	color: white;
+}
+
+div i {
+	font-size: 50px;
+}
+
+.navBar {
+	display: none;
+}
+
+.mainBodyContainer {
+	display: grid;
+}
+
+.bodyContainer {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+#excitingContent {
+	background-color: #c5c5c5;
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+#webDevelopment {
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+#deviceTesting {
+	background-color: #949b96;
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+#evenMore {
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+#doneNow {
+	background-color: #98473e;
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+#moreContent {
+	font-family: 'lato';
+	font-size: 25px;
+}
+
+/* TABLET CSS (min-width:768px) */
+
+@media only screen and (min-width: 768px) {
+	.header {
+		font-size: 55px;
+	}
+
+	br {
+		display: none;
+	}
+	.nav {
+		display: none;
+	}
+
+	.navBar {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		padding-left: 20px;
+		background-color: #2e5266;
+	}
+
+	a {
+		padding: 20px;
+		text-decoration: none;
+		color: white;
+		font-family: monospace;
+		font-size: 18px;
+	}
+
+	.mainBodyContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	#excitingContent {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		font-family: 'lato';
+		font-size: 25px;
+	}
+
+	#deviceTesting {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		font-family: 'lato';
+		font-size: 25px;
+	}
+
+	#webDevelopment {
+		grid-column: 1/2;
+		font-family: 'lato';
+		font-size: 25px;
+	}
+
+	#doneNow {
+		grid-column: 1/4;
+		grid-row: 3/4;
+		font-family: 'lato';
+		font-size: 25px;
+	}
+
+	#moreContent {
+		font-family: 'lato';
+		font-size: 25px;
+	}
+
+	#evenMore {
+		grid-column: 1/4;
+		grid-row: 4/5;
+		font-family: 'lato';
+		font-size: 25px;
+	}
+}
+
+/* DESKTOP CSS (min-width:1024px) */
+
+@media only screen and (min-width: 1024px) {
+	.header {
+		font-size: 80px;
+	}
+
+	br {
+		display: flex;
+	}
+
+	.mainContainer {
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+	}
+
+	.headerNavContainer {
+		height: 300px;
+		grid-template-rows: 3fr 0.75fr 0.75fr 0.75fr;
+	}
+
+	.normal {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		padding-left: 5px;
+		background-color: #f9cb40;
+		color: black;
+		font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-size: 18px;
+	}
+
+	.manyDevices {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		padding-left: 5px;
+		background-color: white;
+		font-family: Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-size: 18px;
+	}
+
+	span {
+		font-size: 20px;
+		padding-right: 5px;
+		margin-bottom: 5px;
+		color: red;
+	}
+
+	.mainBodyContainer {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		box-sizing: border-box;
+	}
+
+	#evenMore {
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+
+	#doneNow {
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+}
